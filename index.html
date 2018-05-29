@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <title>Esteban Trevino | Junior Web Developer</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="main_overlay js_mainoverlay"></div>
+<section id="home" class="cover-main">
+  <header>
+    <nav class="nav-wrapper">
+      <div class="logo">
+        <h2>Esteban Trevino</h2>
+      </div>
+      <ul class="menu">
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://github.com/EsTrevino"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/estevaano"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+      </div>
+    </nav>
+    <div class="menu-trigger js-menutrigger"></div>
+  </header>
+
+  <div class="wrapper">
+      <div id="scene" data-invert-x="false" data-invert-y="false" data-scalar-x="7" data-scalar-y="7" data-friction-x=".1" data-friction-y=".1" data-origin-x=".5" data-origin-y=".5">
+        <h2 class="name" data-depth=".8">Esteban Trevino</h2>
+        <p class="title" data-depth=".6">Junior Front End Developer</p>
+      </div>
+  </div>
+</section>
+   <section class"masonry-grid" id="work">
+     <h2 class="sub-title">
+       My Work
+     </h2>
+  <div class="grid">
+         <div class="grid-item wrap"><img src="images/dev-connector-frontend.png" alt="test"/><div class="text"><p>Dev Connector Full-Stack App</p><p>Full Stack App built using React MongoDB Express and Node</p></div></div>
+  <div class="grid-item wrap">
+    <a href="https://github.com/EsTrevino/redux-weather-forecaster">
+            <img src="images/redux-forecaster.png" alt="test" />
+            <div class="text"><p>Dev Connector Full-Stack App</p><p>Full Stack App built using React MongoDB Express and Node</p></div>
+          </a>
+  </div>
+  <div class="grid-item wrap"><a href="https://codepen.io/estevaano/full/zpQbaW/"><img src="images/quote-generator.png" alt="test" /><div class="text"><p>Dev Connector App</p>
+  <p>Full Stack App built using React MongoDB Express and Node</p></div></a></div>
+       <div class="grid-item wrap"><a href="https://tranquil-eyrie-38657.herokuapp.com/popular"><img src="images/github-battle.png" alt="test"/><div class="text"><p>Dev Connector Full-Stack App</p><p>Full Stack App built using React MongoDB Express and Node</p></div></a></div>
+       
+       <div class="grid-item wrap"><a href="https://powerful-hollows-76420.herokuapp.com/"><img src="images/nyt-article-search.png" alt="test"/><div class="text"><p>Dev Connector Full-Stack App</p><p>Full Stack App built using React MongoDB Express and Node</p></div></a></div>
+
+    </div>
+   </section>
+   <section class="animation" id="about">
+     <div class="wrapper">
+       <h2 class="sub-t">About Me...</h2>
+       <p>Hey! Im Esteban, a Front End Developer based in Phoenix, Arizona . My skillset ranges from HTML, CSS, and, Javascript to Object Oriented programming with C#. My current position is as a .Net Application Developer Intern at Maricopa County.</p>
+       <p>I got my start in coding in 2017 after my leaving my former job as an Analyst at Stryker Corporation. Without any prior experience in programming, I joined a Front End Development Bootcamp and havent looked back. I am working towards my first Front End position. I focus specifically on React, Express, Node, and MongoDB</p>
+     </div>
+    </section>
+<section id="contact">
+  <h2>
+    Contact
+  </h2>
+  <div class="contact-container">
+    <h3>sttrevino2@gmail.com</h3>
+    <div class="contact-icons">
+      <div class="github">
+        <a href="https://github.com/EsTrevino"><i class="fab fa-github-square animated pulse infinite"></i></a>
+        <p class="github_label">Github</p>
+      </div>
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/estevaano"><i class="fab fa-linkedin animated pulse infinite"></i></a>
+        <p class="github_label">Linkedin</p>
+      </div>
+      <div class="resume">
+        <a href="https://docs.google.com/document/d/1fZBMORYZM59reGGeDvOWgmG18PbH-ICyW9bcx1NZK8g/edit?usp=sharing"><i class="fas fa-file-alt animated pulse infinite"></i></a>
+        <p class="github_label">Resume</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <footer id"footer">
+      <div class="footer_container">
+        <div class="footer_left">
+
+          <div class="footer_left--copyright">
+            &copy; Esteban Trevino 2018
+          </div>
+        </div>
+
+
+      </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="scripts/main.js"></script>
+<script>
+const scene = document.getElementById("scene");
+const paralax = new Parallax(scene);
+</script>
+</body>
+
+</html>
